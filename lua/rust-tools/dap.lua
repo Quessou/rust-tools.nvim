@@ -153,7 +153,6 @@ function M.start(args)
                     end
 
                     executableArgs = utils.tableConcat({ unpack(args.executableArgs) }, args.custom_args) --{ unpack(args.executableArgs or { "" }), unpack(args.custom_args or { "" }) }
-                    vim.notify("executableArgs : " .. tprint(executableArgs))
 
                     -- create debug configuration
                     local dap_config = {
